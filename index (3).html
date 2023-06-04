@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>  
+<title>Zakir's Holiday Baking Blog</title>
+<head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Sofia&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Pacifico&display=swap');@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+    </style>
+   <table>
+      <br><tr><h2><a class="header" href="index.html">Zakir's Holiday Baking Blog</a></h2></tr>
+	   <div class="topnav" id="myTopnav">
+		<tr>
+		<td><a href="index.html" class="active">Home</a></td>
+  		<td><p><a href="cookies.html">Gingerbread Cookies</a></p></td>
+  		<td><p><a href="squares.html">Lemon Bars</a></p></td>
+  		<td><p><a href="https://sallysbakingaddiction.com/category/seasonal/christmas/">More Holiday Recipes</a></p></td>
+		</tr>
+	   </div>
+   </table>
+	<script>
+		function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} </script>
+    </head>
+   <body>
+
+	<link rel="stylesheet" href="styles.css">
+   <table class="recipebox" width="65%"> 
+   <tr>
+        <td><img class="recipepic" src="png1.jpg" alt="Freshly-Baked Gingerbread Cookies"></td>
+        <td><p class="recipeheader"><br>Featured Recipe:<br>Gingerbread Cookies!</p><hr class="hrwidth1"><p>Gingerbread Cookies are great this time of year! Just imagine, relaxing on the couch, watching a holiday movie, and enjoying a nice cup of hot cocoa, 
+           all while munching on these freshly-baked festive treats. Well, now you can! The following recipe was derived and adapted from one of my favourite baking websites, <a class="textlink" href="https://sallysbakingaddiction.com/best-gingerbread-cookies/">Sally's Baking Addiction</a>. 
+           These cookies are full of texture and flavour, and are like little Christmas presents that everyone can enjoy. I can guarantee that, when your cookies are ready to eat, they are sure to be crowd pleaser. <br><br> <a href="cookies.html">
+            <button class="button1"><p2>See This Recipe</p2></button></a></p><br></td>
+      </tr>
+      </table><br>
+      <table class="recipebox" width="65%">
+   <tr>
+        <td><img class="recipepic" src="lemonbarz.jpg" alt="Freshly-Baked Lemon Bars"></td>
+        <td><p class="recipeheader"><br>Featured Recipe:<br>Homemade Lemon Bars!</p><hr class="hrwidth1"><p>I don't know about you, but I love lemon bars. The citrusy curd combines perfectly with its buttery and flakey shortbread cookie-crust, which breaks and crumbles with each bite. This recipe is the ultimate lemon bar recipe and the perfect dessert for bringing to parties. They are classy and elegant, while also casual and something you can be proud of making. I made these a while back, and I have wanted to make them again ever since. But, for now, I will teach you how to make these Lemon Bars, so that you can learn to love them as much as I do.<br><br><strong>Note:</strong> This recipe was created on and borrowed from another Blog, <a class="textlink" href="https://sallysbakingaddiction.com/lemon-bars-recipe/">Sally's Baking Addiction</a>. <br><br> <a href="squares.html">
+            <button class="button1"><p2>See This Recipe</p2></button></a></p><br></td>
+      </tr>
+   </table><br>
+	   <table class="recipebox" width="65%">
+   <tr>
+        <td><h2 class="question">Answer These Christmas Riddles to Find the Password and Get a Secret, Bonus Recipe!</h2><hr class="hrwidth1"><p><strong>The Last Letter Of Each Answer Forms the Hidden Code:</strong></p>
+			<ul class="xmas">
+				<li><strong>Riddle 1:</strong> If The End Of The Year is December 31st, What is the End Of Christmas?</li>
+				<li><strong>Riddle 2:</strong> Who Is Snoopy's Best Human Friend?</li>
+				<li><strong>Riddle 3:</strong> What Has Many Keys But Can't Open Santa's Sleigh?</li>
+				<li><strong>Riddle 4:</strong> I Go In Hot Cocoa, I'm Sticky and Sweet, I  Am Undoubtedly The Best Christmas Treat. What Am I?</li>
+				<li><strong>Riddle 5:</strong> All Day I Sit On A Shelf, But Come Alive and Move During The Nights. I Tell Santa Who's Been Naughty and Who's Been Nice. Who Am I?</li>
+				<li><strong>Riddle 6:</strong> I Go By Saint Nicholas, and I'm Known For My Beard. I Vist For Christmas, Year After Year. Who Am I?</li>
+				<li><strong>Riddle 7:</strong> Singers Go Out Each Night To Spread My Cheery Songs, and The People Who Listen To Me Like Joining Along. What am I?</li>
+				<li><strong>Riddle 8:</strong> I'm a Sphere and I'm Fragile, And Really Quite Nice, But When I am Thrown, I Can Hurt You Like Ice. What Am I?</li>
+			</ul><br>
+			<script>
+		   function passWord() {
+			   var testV = 1;
+			   var pass1 = prompt('Please Enter Your Password',' ');
+			   while (testV < 3) {
+				   if (!pass1)
+					   history.go(-1);
+				   if (pass1.toLowerCase() == "snowfall") {
+					   alert('You Got it Right!');
+					   window.open('vault.html');
+					   break;
+				   }
+				   testV+=1;
+				   var pass1 =
+					   prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+			   if (pass1.toLowerCase()!="password" & testV ==3)
+				   history.go(-1);
+			   return " ";
+		   }
+	   </script>
+	<center>
+	<form>
+	<input type="button" class="button1" value="   Crack the Code!   " onClick="passWord()">
+	</form><br>
+	</center></td>
+      </tr>
+	   </table>
+	   
+<br><br>
+</body>
+</html>
